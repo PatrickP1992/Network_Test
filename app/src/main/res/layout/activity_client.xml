@@ -4,32 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ClientActivity">
 
-    <Button
-        android:id="@+id/buttonCreateServer"
+    <EditText
+        android:id="@+id/editTextServername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="goToServerView"
-        android:text="Create Server"
+        android:ems="10"
+        android:hint="IP Adresse"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintVertical_bias="0.284" />
 
     <Button
-        android:id="@+id/buttonJoinServer"
+        android:id="@+id/buttonJoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="118dp"
-        android:onClick="goToClientView"
-        android:text="Join Server"
+        android:layout_marginTop="65dp"
+        android:text="Join"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCreateServer"
+        app:layout_constraintTop_toBottomOf="@+id/editTextServername"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
